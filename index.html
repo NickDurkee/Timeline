@@ -1,0 +1,55 @@
+<!-- Night Colors -->
+<!-- https://coolors.co/palette/02010a-04052e-140152-22007c-0d00a4 -->
+
+<!-- Alien Colors -->
+<!-- https://coolors.co/palette/0c0c0c-101110-112311-123411-0e600e-0a8b0a-08a808-05c505-03e203 -->
+
+<!-- Timeline of Art  -->
+<!-- https://en.wikipedia.org/wiki/Timeline_of_art#1000s -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Timeline</title>
+</head>
+
+<body>
+  <h1><span>Timeline</span></h1>
+
+  <section class="window">
+    <iframe name="iframe-year" id="iframe-year"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/1920px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
+      frameborder="0"></iframe>
+  </section>
+  <section class="range">
+    <span id="year"># AD</span>
+    <input type="range" min="1" max="2022" value="0" class="slider" id="myRange">
+    <form method="get" action="https://en.wikipedia.org/w/index.php" target="iframe-year">
+      <input type="hidden" name="search" value="">
+      <input type="submit" class="submit">
+    </form>
+  </section>
+
+  <section class="buttons">
+    <form id="btnForm" action="get" action="" target="iframe-year">
+      <button id="ad">AD</button>
+      <button id="bc">BC</button>
+      <button type="submit" id="anc">Ancient BC</button>
+      <button type="submit" id="prehistory">Prehistory</button>
+      <button type="submit" id="reset">Reset</button>
+    </form>
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
